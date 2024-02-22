@@ -1,0 +1,219 @@
+:root {
+    --color-primary: #0073ff;
+    --color-white: #e9e9e9;
+    --color-black: #360c67;
+    --color-black-1: #212b38;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: var(--color-white); /* Couleur par défaut du texte */
+    
+}
+
+.top-bar, .menu-bar {
+    background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+    padding: 10px 5%;
+}
+
+.top-bar .contact-info {
+    margin-right: auto; /* Pour pousser les éléments vers la gauche */
+}
+
+.top-bar .phone, .top-bar .email {
+    margin-right: 20px; /* Espacement entre les éléments */
+}
+
+.social-icons i {
+    width: 20px;
+    margin-left: 10px;
+    color: #fc6100;
+}
+
+.logo {
+    font-size: 30px;
+    color: #fc6100;
+}
+
+.logo span {
+    color: var(--color-primary);
+}
+
+.menu-bar {
+    height: 80px;
+    background-color: var(--color-white);
+}
+
+.menu-bar .menu-items {
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    color: #fc6100;
+}
+.dropdown-menu ul li {
+    color: #ffffff; /* Couleur de texte blanc pour les éléments de la dropdown */
+}
+
+.menu-bar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.menu-bar ul li a {
+    font-size: 20px;
+    color: var(--color-dark-blue);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+    color: var(--color-primary);
+}
+
+.fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+    display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+}
+
+.dropdown-menu-1 {
+    display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: var(--color-black);
+}
+
+.hero {
+    height: calc(100vh - 80px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/body.jpeg);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(80%); /* Appliquer un filtre de luminosité à 50% */
+}
+
+.text {
+    z-index: 1;
+    max-width: 800px;
+    padding: 0 20px;
+    text-align: center;
+    color: #1818d0; /* Couleur bleu foncé */
+}
+
+.text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 24px;
+}.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/body.jpeg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 16, 16, 0.5); /* Couleur foncée semi-transparente */
+}
+
+.text {
+    z-index: 1;
+    max-width: 800px;
+    padding: 0 20px;
+    text-align: center;
+    color: #ffffff; /* Couleur du texte */
+}
+
+.text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 24px;
+}
+
+
+#animated {
+    font-size: 60px; /* Taille initiale du texte */
+  /* Empêche le texte de passer à la ligne */
+    overflow: hidden; /* Cache tout contenu qui dépasse */
+    border-right: .15em solid rgb(255, 255, 255); /* Effet de clignotement du curseur */
+    color: #ffffff; /* Couleur bleu foncé */
+    text-align: center; /* Centrer le texte */
+}
+.social-icons a {
+    margin-right: 30px; /* Ajoute une marge à droite pour séparer les icônes */
+}
+
+.social-icons a:last-child {
+    margin-right: 0; /* Supprime la marge à droite pour le dernier élément */
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="interface.css">
+    <title>dropdown Menu</title>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="contact-info">
+            <span class="phone">Numéro de l'entreprise: +27 223 225 4100</span>
+            <span class="email">Adresse Email: contact@entreprise.com</span>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div class="menu-bar">
+        <h1 class="logo">FYLE<span>-GROUP</span></h1>
+        <ul class="menu-items">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Consulting&Assistance</a></li>
+            <li><a href="#">Formation <i class="fas fa-caret-down"></i></a>
+
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Big Data</a></li>
+                        <li><a href="#">Intelligence Artificielle</a></li>
+                        <li><a href="#">Cloud Computing</a></li>
+                        <li><a href="#">Sécurité</a></li>
+                        <li><a href="#">Business Intelligent</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Partenaires</a></li>
+            <li><a href="#">Contactez-Nous</a></li>
+        </ul>
+    </div>
+
+
+    <div class="hero">
+        <div class="background-image"></div>
+        <div class="text">
+            <h1 id="animated"></h1>
+            <p>Nous mettons à votre disposition des outils de points pour apprendre et développer votre carrière professionnelle</p>
+        </div>
+    </div>
+    <script src="interface.js"></script>
+</body>
+</html>
